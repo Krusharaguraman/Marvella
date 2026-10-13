@@ -1,0 +1,5 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { ExperiencePage } from '@/components/hotel/experience-page';
+import image from '@/assets/marvella-dining.jpg';
+export const Route=createFileRoute('/dining')({head:()=>({meta:[{title:'Fine Dining | The Marvella'},{name:'description',content:'Explore inspired Indian and global dining at The Marvella.'},{property:'og:title',content:'Fine Dining | The Marvella'},{property:'og:description',content:'Every flavour tells a story. Discover the art of dining at The Marvella.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Page});
+function Page(){return <ExperiencePage title="Exceptional Dining" eyebrow="A TASTE OF THE EXTRAORDINARY" subtitle="Every flavour tells a story." image={image} heading="A journey for the senses." copy="A celebration of India’s rich culinary heritage and the world’s finest inspirations. Savour the pleasure of beautifully prepared food, gracious surroundings and conversations that last long into the evening." details={['Indian inspirations','Global flavours','Beautiful evenings']}/>;}

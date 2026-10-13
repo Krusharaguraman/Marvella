@@ -1,0 +1,5 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { ExperiencePage } from '@/components/hotel/experience-page';
+import image from '@/assets/marvella-palace.jpg';
+export const Route=createFileRoute('/experiences')({head:()=>({meta:[{title:'Extraordinary Experiences | The Marvella'},{name:'description',content:'Find quiet moments and inspiring escapes at The Marvella.'},{property:'og:title',content:'Extraordinary Experiences | The Marvella'},{property:'og:description',content:'Slow down, reconnect and discover a different rhythm at The Marvella.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Page});
+function Page(){return <ExperiencePage title="Marvella Moments" eyebrow="BEYOND THE ORDINARY" subtitle="Make room for wonder." image={image} heading="A different kind of escape." copy="Let the everyday give way to something more meaningful. From tranquil moments by the water to the beauty of Indian art and architecture, find the little experiences that turn a stay into a story." details={['Quiet escapes','Art & architecture','Time to reconnect']}/>;}
